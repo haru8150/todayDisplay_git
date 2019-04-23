@@ -20,7 +20,10 @@
     <div class="container">
         <!-- <p class="date">20xx/01/23</p> -->
         <script>
-            document.write('10+3の結果は、' + (10+3) + 'です');
+            var today = new Date();
+            var todayHtml = today.getFullYear() + '/' + (today.getMonth() + 1) + '/' + today.getDate();
+
+            document.write('<p class="date">' + todayHtml + '</p>');
         </script>
     </div>
 </body>
